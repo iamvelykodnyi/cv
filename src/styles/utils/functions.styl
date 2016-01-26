@@ -1,0 +1,22 @@
+palette($variant = 'base', $name = 'primary', $opacity = null)
+  $color = null
+  // Get the color spectrum
+  $color-spectrum = $palette-colors[$name]
+  // Get the color variant
+  if $color-spectrum
+    $color = $color-spectrum[$variant]
+  // Set the alpha of the color
+  if $opacity
+    $color = rgba($color, $opacity)
+  $color
+
+
+$layers = {
+  below:  -1,
+  base:   1,
+  hover:  10,
+  fixed:  20,
+  popup:  30,
+}
+z($layer)
+  $layers[$layer]

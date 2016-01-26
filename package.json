@@ -1,0 +1,31 @@
+{
+  "name": "sergii",
+  "version": "1.0.0",
+  "description": "Sergii Velykodnyi's site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svelykodnyi/sergii.git"
+  },
+  "author": "Sergii Velykodnyi <sergii.velykodnyi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svelykodnyi/sergii/issues"
+  },
+  "homepage": "https://github.com/svelykodnyi/sergii#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.2.0",
+    "jeet": "^6.1.2",
+    "nib": "^1.1.0",
+    "rupture": "^0.6.1"
+  }
+}
