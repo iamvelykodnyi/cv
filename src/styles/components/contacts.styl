@@ -1,21 +1,25 @@
 .contacts
   display flex
   flex-wrap wrap
-  justify-content center
+  justify-content flex-start
   padding 0
   list-style none
   &__item
-    display inline-flex
-    size 4.8rem
+    // display inline-flex
+    // size 4rem
     margin 0
+    & ~ &
+      margin-left 1rem
   &__icon
-    margin auto
+    // margin auto
     size 3.2rem
-    border 1px solid
+    border none
     border-radius 100%
+    background-color palette('shade')
+    color palette('shade', 'xxxl')
     font-size $font-size-xl
     line-height 3.2rem
     text-align center
-    transition all 0.2s
     &:hover
-      transform scale(1.1)
+      background-color palette('shade', 'd')
+      color palette('shade', 'xxxl')

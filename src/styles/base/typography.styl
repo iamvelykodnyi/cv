@@ -1,27 +1,12 @@
-$font-serif = 'Roboto Slab', serif
-
-$font-size-factor = 1.125
-$font-size-m = 1em
-$line-height = 1.45
-
-$font-size-s = $font-size-m / $font-size-factor
-$font-size-xs = $font-size-s / $font-size-factor
-$font-size-xxs = $font-size-xs / $font-size-factor
-
-$font-size-l = $font-size-m * $font-size-factor
-$font-size-xl = $font-size-l * $font-size-factor
-$font-size-xxl = $font-size-xl * $font-size-factor
-$font-size-xxxl = $font-size-xxl * $font-size-factor
-
 html
   font-size 16px
   +above(m)
     font-size 20px
 
 body
-  // color palette('text')
+  color palette('shade', 'xd')
   font-family $font-serif
-  font-weight 400
+  font-weight $font-weight
   font-size $font-size-m
   line-height $line-height
 
@@ -35,9 +20,9 @@ li
 
 h1, h2, h3, h4, h5, h6
   margin 1.414em 0 0.5em
-  // color palette('text', 'bold')
+  color palette('shade', 'xxd')
   font-family $font-serif
-  font-weight 400
+  font-weight $font-weight-bold
   line-height 1.2
 
 h1
@@ -64,5 +49,5 @@ small
   font-size $font-size-s
 
 b, strong
-  // color palette('text', 'bold')
-  font-weight 700
+  color palette('shade', 'xxd')
+  font-weight $font-weight-bold

@@ -1,3 +1,54 @@
+/// ============================================================================
+/// Palette
+/// ============================================================================
+$color-primary = #2196F3
+$color-accent = #dd6545
+$palette-colors = {
+  primary: {
+    base: $color-primary,
+    l: tint($color-primary, 20%),
+    d: shade($color-primary, 20%)
+  },
+  accent: {
+    base: $color-accent,
+    l: tint($color-accent, 20%),
+    d: shade($color-accent, 20%)
+  },
+  shade: {
+    lighter: #fafafa,
+    xxxl: #F5F5F5,
+    xxl: #eee,
+    xl: #e0e0e0,
+    l: #bdbdbd,
+    base: #9e9e9e,
+    d: #757575,
+    xd: #616161,
+    xxd: #424242,
+    xxxd: #212121
+  }
+}
 
+/// ============================================================================
+/// fonts
+/// ============================================================================
+$font-serif = 'Roboto Slab', serif
+$font-size-factor = 1.125
+$font-size-m = 1em
+$line-height = 1.45
+$font-weight = 400
+$font-weight-bold = 700
+
+$font-size-s = $font-size-m / $font-size-factor
+$font-size-xs = $font-size-s / $font-size-factor
+$font-size-xxs = $font-size-xs / $font-size-factor
+
+$font-size-l = $font-size-m * $font-size-factor
+$font-size-xl = $font-size-l * $font-size-factor
+$font-size-xxl = $font-size-xl * $font-size-factor
+$font-size-xxxl = $font-size-xxl * $font-size-factor
+
+/// ============================================================================
+/// Rupture breakpoints
+/// ============================================================================
 rupture.scale = 0 480px 768px 980px 1200px 1800px
 rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 'hd'
