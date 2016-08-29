@@ -1,5 +1,4 @@
 html {
-  height: 100%;
   font-size: 16px;
   @include mq($from: sm) {
     font-size: 20px;
@@ -7,8 +6,7 @@ html {
 }
 
 body {
-  min-height: 100%;
-  background-color: $color-light;
+  color: tint($color-dark, 10%);
   font-family: $font-base;
   font-weight: 400;
   font-size: $font-size-m;
@@ -42,6 +40,7 @@ li {
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
+  color: tint($color-dark, 5%);
   font-family: $font-title;
   font-weight: 700;
   line-height: 1.2;
@@ -70,7 +69,8 @@ small,
 }
 
 b, strong {
-  font-weight: 700
+  font-weight: 700;
+  color: $color-dark;
 }
 
 code {

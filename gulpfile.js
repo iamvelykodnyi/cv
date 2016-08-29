@@ -94,7 +94,7 @@ gulp.task('watch', ['default', 'server'], function() {
   gulp.watch(sourcePaths.styles, ['styles']);
   gulp.watch(sourcePaths.images, ['images']);
   gulp.watch(sourcePaths.scripts, ['scripts']).on('change', browserSync.reload);
-  gulp.watch(sourcePath + '/**/*.{html,md}', ['html']);
+  gulp.watch(sourcePath + '/**/*.{jade,md}', ['html']);
 });
 
 // Task: server

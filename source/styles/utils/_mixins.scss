@@ -36,9 +36,14 @@
 }
 
 @mixin container {
-  max-width: map-get($mq-breakpoints, 'lg');
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 $gutter;
+  @include mq(sm) {
+    max-width: map-get($mq-breakpoints, 'sm') - ($gutter * 2);
+  }
+  @include mq(md) {
+    max-width: map-get($mq-breakpoints, 'md') - ($gutter * 2);
+  }
 }
 
 @mixin link-style($color, $color-hover) {
