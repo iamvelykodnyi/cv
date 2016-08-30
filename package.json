@@ -23,6 +23,9 @@
   "homepage": "https://github.com/svelykodnyi/sergii#readme",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
     "browser-sync": "^2.14.0",
     "del": "^2.2.2",
     "eslint": "^3.3.1",
