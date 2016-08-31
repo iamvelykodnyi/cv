@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer';
 import browserSync from 'browser-sync';
 import concat from 'gulp-concat-util';
 import cssnano  from 'gulp-cssnano';
+import data from 'gulp-data';
 import del from 'del';
 import gulp from 'gulp';
 import gulpIf from 'gulp-if';
@@ -16,16 +17,18 @@ import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import uglify from 'gulp-uglify';
 
+import { site } from './package.json';
+
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
 // Paths to the source code.
 const sourcePath = 'source';
 const sourcePaths = {
-  html:     `${sourcePath}/*.jade`,
-  icons:    `${sourcePath}/icons/*.css`,
-  images:   `${sourcePath}/images/**/*.{png,jpg,svg}`,
-  scripts:  `${sourcePath}/scripts/**/*.js`,
-  styles:   `${sourcePath}/styles/**/*.scss`
+  html: `${sourcePath}/*.jade`,
+  icons: `${sourcePath}/icons/*.css`,
+  images: `${sourcePath}/images/**/*.{png,jpg,svg}`,
+  scripts: `${sourcePath}/scripts/**/*.js`,
+  styles: `${sourcePath}/styles/**/*.scss`
 };
 
 // Path to the application
@@ -49,6 +52,7 @@ const imageminOption = {
 gulp.task('html', () =>
   gulp.src(sourcePaths.html)
     .pipe(plumber())
+    .pipe(data(() => site))
     .pipe(jade({
       pretty: isDev ? true : false
     }))

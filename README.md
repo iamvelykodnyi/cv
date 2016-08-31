@@ -1,4 +1,4 @@
-# Sergii Velykodnyi's site
+# CV
 
 ### Task Watch
 Clear up `app` folder, build application and run server:

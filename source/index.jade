@@ -3,7 +3,28 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title Sergii Velykodnyi | CV
+    title=name
+    meta(name="description" content=description)
+    // Schema.org markup (Google)
+    meta(itemprop="name" content=name)
+    meta(itemprop="description" content=description)
+    meta(itemprop="image" content=url+image)
+    // Twitter Card markup
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content=name)
+    meta(name="twitter:title" content=name)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:creator" content="@svelykodnyi")
+    meta(name="twitter:image" content=url+image)
+    meta(name="twitter:image:alt" content=description)
+    // Open Graph markup (Facebook, Pinterest)
+    meta(property="og:title" content=name)
+    meta(property="og:type" content="article")
+    meta(property="og:url" content=url)
+    meta(property="og:image" content=url+image)
+    meta(property="og:description" content=description)
+    meta(property="og:site_name" content=name)
+    // CSS
     link(href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:700" rel="stylesheet")
     link(href="styles/main.css", rel='stylesheet')
   body
