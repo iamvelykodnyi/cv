@@ -14,12 +14,15 @@ import jade from 'gulp-jade';
 import plumber from 'gulp-plumber';
 import postcss from 'gulp-postcss';
 import sass from 'gulp-sass';
+import sftp from 'gulp-sftp';
 import sourcemaps from 'gulp-sourcemaps';
 import uglify from 'gulp-uglify';
 
 import { site } from './package.json';
+import deployOptions from './.deploy-options.json';
 
-const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+
+const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'dev';
 
 // Paths to the source code.
 const sourcePath = 'source';
@@ -109,6 +112,12 @@ gulp.task('server', () =>
     files: `${buildPath}/**/*.html`,
     server: buildPath
   })
+);
+
+// Task: deploy
+gulp.task('deploy', () =>
+  gulp.src(`${buildPath}/**/*`)
+    .pipe(sftp(deployOptions))
 );
 
 // Task: default

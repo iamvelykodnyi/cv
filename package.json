@@ -4,11 +4,12 @@
   "description": "Sergii Velykodnyi's CV",
   "main": "gulpfile.js",
   "scripts": {
-    "build:clean": "NODE_ENV=production gulp clean",
-    "build:server": "NODE_ENV=production gulp server",
+    "build:clean": "NODE_ENV=prod gulp clean",
+    "build:server": "NODE_ENV=prod gulp server",
     "build:app": "NODE_ENV=production gulp",
     "build": "npm run build:clean && npm run build:app && npm run build:server",
     "watch": "gulp clean && gulp watch",
+    "deploy": "npm run build:clean && npm run build:app && NODE_ENV=prod gulp deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,7 @@
   "homepage": "https://github.com/svelykodnyi/cv#readme",
   "site": {
     "name": "Sergii Velykodnyi's CV",
-    "description": "",
+    "description": "Front-end Developer (HTML, CSS, Sass, Stylus, JavaScript, Theming Drupal & Wordpress)",
     "url": "http://cv.velykodnyi.com",
     "image": "/images/meta-image.jpg"
   },
@@ -44,6 +45,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
+    "gulp-sftp": "^0.1.5",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0",
     "marked": "^0.3.6",
