@@ -17,7 +17,7 @@
     "url": "git+https://github.com/svelykodnyi/cv.git"
   },
   "author": "Sergii Velykodnyi <sergii.velykodnyi@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/svelykodnyi/cv/issues"
   },
