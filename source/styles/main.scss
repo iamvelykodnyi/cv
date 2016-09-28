@@ -1,15 +1,15 @@
-@import "normalize.css";
-@import "utils/variables";
-@import "utils/functions";
-@import "utils/mixins";
-@import "node_modules/sass-mq/mq";
+@import 'normalize.css';
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'node_modules/sass-mq/mq';
 
-@import "common/base";
-@import "common/box-model";
+@import 'common/base';
+@import 'common/box-model';
 
-@import "components/tables";
+@import 'components/tables';
 
-@import "layout/container";
-@import "layout/header";
-@import "layout/content";
-@import "layout/footer";
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';

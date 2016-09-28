@@ -11,7 +11,7 @@ $color-light:   #f8f8f8;
 $color-gray:    #a3a1a1;
 $color-dark:    #343838;
 
-$duration: 0.3s;
+$duration: .3s;
 
 $spacing: 3em;
 $spacing-double: $spacing * 2;
@@ -21,9 +21,9 @@ $spacing-half: $spacing / 2;
 $gutter: 15px;
 
 /// === Typography ===
-$font-base: "Merriweather Sans", Ubuntu, Helvetica, Arial, sans-serif;
-$font-title: "Merriweather", "PT Serif", Georgia, FreeSerif, sans-serif;
-$font-mono: monospace; //'Ubuntu Mono';
+$font-base: 'Merriweather Sans', Ubuntu, Helvetica, Arial, sans-serif;
+$font-title: 'Merriweather', 'PT Serif', Georgia, FreeSerif, sans-serif;
+$font-mono: 'Ubuntu Mono', monospace;
 $font-logo: $font-title;
 
 $font-size-factor: 1.25;

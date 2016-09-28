@@ -31,18 +31,16 @@ html(lang="en")
     header.layout-header
       .layout-container
         h1.site-title Hello,<br> I am Sergii Velykodnyi.
-    
+
     main.layout-content
       .layout-container
-        include:markdown markdown/about.md
-        include:markdown markdown/contacts.md
-        include:markdown markdown/skills.md
-        include:markdown markdown/education.md
-        include:markdown markdown/work-experience.md
-        include:markdown markdown/my-own-projects.md
-        
+        include:markdown-it markdown/about.md
+        include:markdown-it markdown/contacts.md
+        include:markdown-it markdown/skills.md
+        include:markdown-it markdown/education.md
+        include:markdown-it markdown/work-experience.md
+        include:markdown-it markdown/my-own-projects.md
+
     footer.layout-footer
       .layout-container
-        | Created by Sergii Velykodnyi | Code on 
-        a(href='https://github.com/svelykodnyi/cv') GitHub
-      
+        a(href='https://github.com/svelykodnyi/cv') Code on GitHub

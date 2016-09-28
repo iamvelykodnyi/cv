@@ -8,15 +8,15 @@ html {
 body {
   color: tint($color-dark, 10%);
   font-family: $font-base;
-  font-weight: 400;
   font-size: $font-size-m;
+  font-weight: 400;
   line-height: $base-line-height;
 }
 
 a {
   @include link-style($color-primary, $color-accent);
   text-decoration: none;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out, border-color .2s ease-in-out;
 }
 
 img {
@@ -34,12 +34,15 @@ pre {
 }
 
 li {
-  margin-bottom: 0.65em;
+  margin-bottom: .65em;
 }
 
 
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 .5em;
   color: tint($color-dark, 5%);
   font-family: $font-title;
   font-weight: 700;
@@ -68,9 +71,10 @@ small,
   font-size: $font-size-s;
 }
 
-b, strong {
-  font-weight: 700;
+b,
+strong {
   color: $color-dark;
+  font-weight: 700;
 }
 
 code {
@@ -79,22 +83,24 @@ code {
 }
 
 blockquote {
-  margin: 1.3em 0 1.3em;
-  padding-left: 0.65rem;
+  margin: 1.3em 0;
+  padding-left: .65rem;
   border-left: 3px solid $color-gray;
+
   p {
     margin: 0;
     font-size: $font-size-s;
-    font-weight: 300
+    font-weight: 300;
   }
 }
 
 
-p, li {
+p,
+li {
   & > code {
-    padding: 0.2em 0.25em;
+    padding: .2em .25em;
     border-radius: 3px;
     background-color: $color-light;
-    font-size: 0.9em;
+    font-size: .9em;
   }
 }

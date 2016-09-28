@@ -1,9 +1,9 @@
 @mixin pseudo-element($width, $height, $content: '') {
   display: block;
   position: absolute;
-  content: $content;
-  height: $height;
   width: $width;
+  height: $height;
+  content: $content;
 }
 
 @mixin element-to-center($value: 'both') {
@@ -25,14 +25,14 @@
   }
 }
 
-@mixin reset-select() {
-  /* Delete style browser */
-  -webkit-appearance: none; /*for WebKit*/
-  -moz-appearance: none; /* for FF */
-  text-indent: 0; /* for FF */
-  text-overflow: ''; /* for FF */
-  -ms-appearance: none; /* for IE */
-  appearance: none !important; /* for IE */
+@mixin reset-select {
+  // Delete style browser
+  // -webkit-appearance: none; // for WebKit
+  // -moz-appearance: none; // for FF
+  text-indent: 0; // for FF
+  text-overflow: ''; // for FF
+  // -ms-appearance: none; // for IE
+  appearance: none !important; // for IE
 }
 
 @mixin container {
@@ -47,10 +47,11 @@
 }
 
 @mixin link-style($color, $color-hover) {
+  border-bottom: 1px solid rgba($color, .2);
   color: $color;
-  border-bottom: 1px solid rgba($color, 0.2);
+
   &:hover {
+    border-bottom: 1px solid rgba($color-hover, .6);
     color: $color-hover;
-    border-bottom: 1px solid rgba($color-hover, 0.6);
   }
 }
