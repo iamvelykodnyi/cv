@@ -1,5 +1,11 @@
 ## Contacts
-You can follow me on [GitHub][github], [Twitter][twitter], [Instagram][instagram], [Facebook][facebook], [Google Plus][gplus], [VK][vk].
+You can follow me on 
+[GitHub][github] • 
+[Twitter][twitter] • 
+[Instagram][instagram] • 
+[Facebook][facebook] • 
+[Google Plus][gplus] • 
+[Vkontacte][vk].
 
 Email: [sergii.velykodnyi@gmail.com][email]
 

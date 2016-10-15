@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  color: tint($color-dark, 10%);
   font-family: $font-base;
   font-size: $font-size-m;
   font-weight: 400;
@@ -43,7 +42,6 @@ h2,
 h3,
 h4 {
   margin: 1.414em 0 .5em;
-  color: tint($color-dark, 5%);
   font-family: $font-title;
   font-weight: 700;
   line-height: 1.2;
