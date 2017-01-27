@@ -1,5 +1,5 @@
 ## Skill Set
-* HTML, HTML5, CSS, CSS Pre-Processors (Sass, Stylus).
+* HTML, HTML5, CSS, CSS Pre-Processors (Sass, Stylus), PostCSS.
 * Responsive/adaptive layout.
 * Scalable and modular architecture for CSS (SMACSS, BEM).
 * Experience with Bootstrap.
@@ -7,5 +7,5 @@
 * PHP (middle level).
 * Templating engines (Twig, Handlebars, Pug).
 * Create themes for Drupal, Wordpress.
-* Experience with tools: Unix command-line, Gulp.js, Git, Vagrant.
+* Experience with tools: Unix command-line, Gulp.js, Git, Vagrant, Browserify, Webpack.
 * Experience with Linux, macOS, Windows.

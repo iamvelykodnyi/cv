@@ -4,15 +4,15 @@ You can follow me on
 [Twitter][twitter] • 
 [Instagram][instagram] • 
 [Facebook][facebook] • 
-[Google Plus][gplus] • 
+[Google+][gplus] • 
 [Vkontacte][vk].
 
 Email: [sergii.velykodnyi@gmail.com][email]
 
-[github]:https://github.com/svelykodnyi
-[twitter]:https://twitter.com/svelykodnyi
-[instagram]:https://www.instagram.com/svelykodnyi
-[facebook]:https://www.facebook.com/svelykodnyi
+[github]:https://github.com/iamvelykodnyi
+[twitter]:https://twitter.com/iamvelykodnyi
+[instagram]:https://www.instagram.com/iamvelykodnyi
+[facebook]:https://www.facebook.com/iamvelykodnyi
 [gplus]:https://plus.google.com/+SergiiVelykodnyiVigeo
-[vk]:http://vk.com/svelykodnyi
+[vk]:http://vk.com/iamvelykodnyi
 [email]:mailto:sergii.velykodnyi@gmail.com

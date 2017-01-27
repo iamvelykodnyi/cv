@@ -1,8 +1,12 @@
 ## Work experience
 
+#### [Rolique](http://rolique.io/)
+
+Front-end Developer, Drupal Theming October 2016 to present
+
 #### [Merezhko.com](http://merezhko.com)
 
-Web Developer, September 2015 to present
+Web Developer, September 2015 to September 2016
 
 Creation and support of sites based on Drupal and Wordpress.
 
